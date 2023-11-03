@@ -1,0 +1,36 @@
+:root{
+    --primary-theme-color: #20232a;
+    --secondary-theme-color: #282c34;
+    --primary-text-color: #fff;
+    --primary-highlight-color: #3294B3;
+    --primary-font-family: Monospace;
+}
+
+.body{
+    background-color: var(--primary-theme-color);
+    color: var(--primary-text-color);
+    font-family: var(--primary-font-family);
+    margin: 0;
+}
+
+.hero{
+    background-image: url(./../assets/fondomiau.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card{
+    max-width: 256px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    display: flex;
+}

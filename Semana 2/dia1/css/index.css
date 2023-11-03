@@ -1,36 +1,92 @@
-:root{
+:root {
     --primary-theme-color: #20232a;
-    --secondary-theme-color: #282c34;
+    --secondary-theme-color: #282c3444;
+    --primary-shadow-color: #20232a7f;
+    --secondary-shadow-color: #282c3436;
     --primary-text-color: #fff;
     --primary-highlight-color: #3294B3;
     --primary-font-family: Monospace;
+
 }
 
-.body{
+.body {
     background-color: var(--primary-theme-color);
     color: var(--primary-text-color);
     font-family: var(--primary-font-family);
     margin: 0;
 }
 
-.hero{
+.hero {
     background-image: url(./../assets/fondomiau.jpg);
     background-position: center;
     background-size: cover;
     min-height: 100vh;
-
     display: flex;
-    align-items: center;
-    justify-content: center;
-
 }
 
-.card{
-    max-width: 256px;
+.card {
+    background-color: var(--secondary-theme-color);
+    border: 0.125rem solid var(--primary-highlight-color);
+    border-radius: 1rem;
+    max-width: 320px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.card__header {
+    background-color: var(--primary-shadow-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.card__img {
+    background-color: var(--primary-theme-color);
+    border-radius: 50%;
+    width: min(100%, 256px);
+    object-fit: cover;
+}
+
+.card__body{
+    background-color: var(--secondary-shadow-color);
+    padding: 1rem;
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card__title{
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card__subtitle{
+    margin: 0;
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+.card__text{
+    margin: 0;
+    font: 0.875rem;
+    text-align: justify;
+}
+
+.card__footer{
+    background-color: var(--primary-shadow-color);
+    padding: 1rem;
 }
 
 .menu{
     display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.menu__icon{
+    color: var(--primary-text-color);
+    font-size: 1.25rem;
 }
